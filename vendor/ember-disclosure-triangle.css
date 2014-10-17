@@ -1,0 +1,43 @@
+button.em-disclosure-triangle {
+  border:0;
+  background:transparent;
+  padding:0;
+  margin:0;
+  font-family: inherit;
+  font-size: 100%;
+  outline: 0;
+}
+button.em-disclosure-triangle:before {
+  content:'';
+  display: inline-block;
+  position: relative;
+  left: 3px;
+  border: 6px solid transparent;
+  border-left-color: #000;
+  transform-origin: 25% 55%;
+  transition: transform .25s;
+}
+
+button.em-disclosure-triangle.active:before {
+/*  left: 0;
+  top: 3px;
+  border-color: #000 transparent transparent;
+*/
+  transform: rotate(90deg);
+}
+
+button.em-disclosure-triangle:hover {
+  cursor: pointer;
+}
+
+.em-disclosure-disclosee-wrapper {
+  overflow:hidden;
+}
+
+.em-disclosure-disclosee {
+  transition: transform .25s;
+  transform: translateY(-100%);
+}
+.em-disclosure-disclosee-wrapper.active .em-disclosure-disclosee {
+  transform: translateY(0);
+}

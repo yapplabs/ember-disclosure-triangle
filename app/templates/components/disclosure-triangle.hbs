@@ -1,0 +1,6 @@
+<button {{bind-attr class=":em-disclosure-triangle isDisclosed:active"}} {{action 'toggleDisclosure'}}> {{label}} </button>
+<div {{bind-attr class=":em-disclosure-disclosee-wrapper isDisclosed:active"}}>
+  {{#view isVisible=isDiscloseeVisible class="em-disclosure-disclosee"}}
+    {{yield}}
+  {{/view}}
+</div>
