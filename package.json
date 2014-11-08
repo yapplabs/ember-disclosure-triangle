@@ -1,6 +1,7 @@
 {
   "name": "ember-disclosure-triangle",
   "version": "0.0.1",
+  "description": "Provides a component and corresponding CSS for rendering a disclosure triangle that hides and shows the given block",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -10,7 +11,7 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "https://github.com/stefanpenner/ember-cli",
+  "repository": "https://github.com/yapplabs/ember-disclosure-triangle",
   "engines": {
     "node": ">= 0.10.0"
   },
